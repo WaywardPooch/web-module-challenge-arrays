@@ -146,9 +146,22 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/) {
-  /*your code here*/
+function removeFlavorByName(flavorArray, flavorStringToRemove) {
+  // Make a copy of the input array
+  const newFlavorArray = flavorArray;
+  // Check each item inside of the array
+  for (let i = 0; i < newFlavorArray.length; i++) {
+    // If the item name matches the flavor to remove...
+    if (newFlavorArray[i] === flavorStringToRemove) {
+      // Remove the entry at the current index from the array
+      newFlavorArray.splice(i, 1);
+    }
+  }
+  // Return the new array
+  return newFlavorArray;
 }
+// Log a test case where "Black Walnut" flavor is to be removed
+console.log("Task 6: ", removeFlavorByName(originalFlavors, "Black Walnut"));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
