@@ -105,8 +105,13 @@ Use the removeLastFlavor function below to do the following:
   would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/) {
-  /*your code here*/
+function removeLastFlavor(flavorArray) {
+  // Create a copy of the inputted array
+  const newFlavorArray = flavorArray;
+  // Remove the last item in the new array
+  newFlavorArray.pop();
+  // Return the new array
+  return newFlavorArray;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
