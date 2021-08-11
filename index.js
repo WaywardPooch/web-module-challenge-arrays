@@ -54,7 +54,8 @@ function copy(array) {
 Confirm that an array is exactly 31 flavors. Your function should accept:
   1. an array as a parameter
   2. Check to see if the array given is 31 flavors
-  3. Your function should return a boolean TRUE if the length of the array is 31 and FALSE if the length of the array is NOT 31.
+  3. Your function should return a boolean TRUE if the length of the array is 31 and FALSE 
+     if the length of the array is NOT 31.
 
 
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
@@ -69,7 +70,8 @@ function is31Flavors(array) {
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
+Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! 
+They think this will be a game changer. You need to modify the array to include this flavor. 
 
 Use the addFlavor function below to do the following:
   1. Receive an array
@@ -77,22 +79,30 @@ Use the addFlavor function below to do the following:
   3. The function adds the passed flavor to the front of the passed array
   4. The function should return the resulting array
 
-  For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
+  For example: addFlavor(originalFlavors, "Rainbow Sherbert") 
+  should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
 
-function addFlavor() {
-  // Code Here
+function addFlavor(flavorArray, newFlavorString) {
+  // Create a copy of the inputted array
+  const newFlavorArray = flavorArray;
+  // Add the new flavor to the beginning of the new array
+  newFlavorArray.unshift(newFlavorString);
+  // Return the new array
+  return newFlavorArray;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
+Houston, we have a problem! There are now 32 flavors in the originalFlavors array! 
+Your task is to remove an item from the end of the array. 
 
 Use the removeLastFlavor function below to do the following:
   1. Receive an array
   2. Remove the last item from the received array
   3. Return the resulting array
 
-  For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
+  For example: running removeLastFlavor(originalFlavors) 
+  would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
 function removeLastFlavor(/*your code here*/) {
@@ -107,7 +117,8 @@ Use the getFlavorByIndex function below to do the following:
   2. Receive a number (the desired index)
   3. Return the flavor located at the received index position
 
-  For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
+  For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", 
+  assuming Rainbow Sherbert has been added successfully
 */
 
 function getFlavorByIndex(/*your code here*/) {
