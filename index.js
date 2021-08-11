@@ -126,8 +126,9 @@ Use the getFlavorByIndex function below to do the following:
   assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/) {
-  /*your code here*/
+function getFlavorByIndex(flavorArray, flavorIndex) {
+  // Return the value at the specified flavor index in the given array
+  return flavorArray[flavorIndex];
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
